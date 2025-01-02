@@ -1,0 +1,16 @@
+file_format: "1"
+id: popcorne
+name: popcorne
+type: board
+arch: arm
+exposes:
+  - i2c_oled
+features:
+  - keys
+  - display
+  - underglow
+  - studio
+outputs:
+  - usb
+  - ble
+url: https://github.com/PercyJW-2/zmk-config

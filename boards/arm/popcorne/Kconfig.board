@@ -1,0 +1,6 @@
+# Copyright (c) 2025 Joris Wachsmuth
+# SPDX-License-Identifier: MIT
+
+config BOARD_POPCORNE
+    bool "popcorne"
+    depends on SOC_NRF52840_QIAA

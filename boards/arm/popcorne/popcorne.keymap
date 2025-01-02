@@ -1,0 +1,77 @@
+/*
+ * Copyright (c) 2025 Joris Wachsmuth
+ * SPDX-License-Identifier: MIT
+ */
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/rgb.h>
+#include <dt-bindings/zmk/bt.h>
+
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            // -------------------------------------  -------------------------------------
+            // | TAB |  Q  |  W  |  E  |  R  |  T  |  |  Z  |  U  |  I  |  O  |  P  |  -  |
+            // | CTL |  A  |  S  |  D  |  F  |  G  |  |  H  |  J  |  K  |  L  |  ;  |  '  |
+            // | SFT |  Y  |  X  |  C  |  V  |  B  |  |  N  |  M  |  ,  |  .  |  /  | SFT |
+            // ------|MO(1)|MO(2)| WIN | SPC | ENC |  |ENTER|MO(3)|BSPC | DEL |
+            //       -------------------------------  -------------------------
+            bindings = <
+            &kp TAB   &kp Q &kp W &kp R    &kp R     &kp T    &kp Z   &kp U &kp I     &kp O   &kp P    &kp MINUS
+            &kp LCTRL &kp A &kp S &kp D    &kp F     &kp G    &kp H   &kp J &kp K     &kp L   &kp SEMI &kp SQT
+            &kp LSHFT &kp Y &kp X &kp C    &kp V     &kp B    &kp N   &kp M &kp COMMA &kp DOT &kp FSLH &kp RSHFT
+                      &mo 1 &mo 2 &kp LGUI &kp SPACE &trans   &kp RET &mo 3 &kp BSPC  &kp DEL
+            >;
+        };
+
+        num_layer {
+            // -------------------------------------  -------------------------------------
+            // | TAB |  Q  |  W  |  E  |  R  |  T  |  |  Z  |  U  |  I  |  O  |  P  |  -  |
+            // | CTL |  A  |  S  |  D  |  F  |  G  |  |  H  |  J  |  K  |  L  |  ;  |  '  |
+            // | SFT |  Y  |  X  |  C  |  V  |  B  |  |  N  |  M  |  ,  |  .  |  /  | SFT |
+            // ------|MO(1)|MO(2)| WIN | SPC | ENC |  |ENTER|MO(3)|BSPC | DEL |
+            //       -------------------------------  -------------------------
+            bindings = <
+            &kp TAB   &kp Q &kp W &kp R    &kp R     &kp T    &kp Z   &kp U &kp I     &kp O   &kp P    &kp MINUS
+            &kp LCTRL &kp A &kp S &kp D    &kp F     &kp G    &kp H   &kp J &kp K     &kp L   &kp SEMI &kp SQT
+            &kp LSHFT &kp Y &kp X &kp C    &kp V     &kp B    &kp N   &kp M &kp COMMA &kp DOT &kp FSLH &kp RSHFT
+            &mo 1 &mo 2 &kp LGUI &kp SPACE &trans   &kp RET &mo 3 &kp BSPC  &kp DEL
+            >;
+        };
+
+        f_layer {
+            // -------------------------------------  -------------------------------------
+            // | TAB |  Q  |  W  |  E  |  R  |  T  |  |  Z  |  U  |  I  |  O  |  P  |  -  |
+            // | CTL |  A  |  S  |  D  |  F  |  G  |  |  H  |  J  |  K  |  L  |  ;  |  '  |
+            // | SFT |  Y  |  X  |  C  |  V  |  B  |  |  N  |  M  |  ,  |  .  |  /  | SFT |
+            // ------|MO(1)|MO(2)| WIN | SPC | ENC |  |ENTER|MO(3)|BSPC | DEL |
+            //       -------------------------------  -------------------------
+            bindings = <
+            &kp TAB   &kp Q &kp W &kp R    &kp R     &kp T    &kp Z   &kp U &kp I     &kp O   &kp P    &kp MINUS
+            &kp LCTRL &kp A &kp S &kp D    &kp F     &kp G    &kp H   &kp J &kp K     &kp L   &kp SEMI &kp SQT
+            &kp LSHFT &kp Y &kp X &kp C    &kp V     &kp B    &kp N   &kp M &kp COMMA &kp DOT &kp FSLH &kp RSHFT
+            &mo 1 &mo 2 &kp LGUI &kp SPACE &trans   &kp RET &mo 3 &kp BSPC  &kp DEL
+            >;
+        };
+
+        misc_layer {
+            // -------------------------------------  -------------------------------------
+            // | TAB |  Q  |  W  |  E  |  R  |  T  |  |  Z  |  U  |  I  |  O  |  P  |  -  |
+            // | CTL |  A  |  S  |  D  |  F  |  G  |  |  H  |  J  |  K  |  L  |  ;  |  '  |
+            // | SFT |  Y  |  X  |  C  |  V  |  B  |  |  N  |  M  |  ,  |  .  |  /  | SFT |
+            // ------|MO(1)|MO(2)| WIN | SPC | ENC |  |ENTER|MO(3)|BSPC | DEL |
+            //       -------------------------------  -------------------------
+            bindings = <
+            &kp TAB   &kp Q &kp W &kp R    &kp R     &kp T    &kp Z   &kp U &kp I     &kp O   &kp P    &kp MINUS
+            &kp LCTRL &kp A &kp S &kp D    &kp F     &kp G    &kp H   &kp J &kp K     &kp L   &kp SEMI &kp SQT
+            &kp LSHFT &kp Y &kp X &kp C    &kp V     &kp B    &kp N   &kp M &kp COMMA &kp DOT &kp FSLH &kp RSHFT
+            &mo 1 &mo 2 &kp LGUI &kp SPACE &trans   &kp RET &mo 3 &kp BSPC  &kp DEL
+            >;
+        };
+
+        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+    };
+};

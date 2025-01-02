@@ -1,0 +1,34 @@
+/*
+ * Copyright (c) 2025 Joris Wachsmuth
+ * SPDX-License-Identifier: MIT
+ */
+
+ &pinctrl {
+    i2c0_default: i2c0_default {
+        group1 {
+            psels = <NRF_PSEL(TWIM_SDA, 1, 13)>,
+                <NRF_PSEL(TWIM_SCL, 0, 29)>;
+        };
+    };
+
+    i2c0_sleep: i2c0_sleep {
+        group1 {
+            psels = <NRF_PSEL(TWIM_SDA, 1, 13)>,
+                <NRF_PSEL(TWIM_SCL, 0, 29)>;
+            low-power-enable;
+        };
+    };
+
+    spi3_default: spi3_default {
+        group1 {
+            psels = <NRF_PSEL(NRF_PSEL(SPIM_MOSI, 1, 12))>;
+        };
+    };
+
+    spi3_sleep: spi3_sleep {
+        group1 {
+            psels = <NRF_PSEL(NRF_PSEL(SPIM_MOSI, 1, 12))>;
+            low-power-enable;
+        }
+    }
+};
