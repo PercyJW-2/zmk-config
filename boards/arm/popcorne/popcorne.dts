@@ -28,7 +28,7 @@
         zmk,kscan = &kscan0;
         zmk,physical-layout = &popcorne_layout;
         zmk,underglow = &led_strip;
-    }
+    };
 
     matrix_transform0: matrix_transform0 {
         compatible = "zmk,matrix-transform";
