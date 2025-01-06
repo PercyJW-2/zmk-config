@@ -1,0 +1,19 @@
+# Copyright (c) 2025 Joris Wachsmuth
+# SPDX-License-Identifier: MIT
+
+if BOARD_POPCORNE
+
+config ZMK_KEYBOARD_NAME
+    default "popcorne"
+
+if USB_DEVICE_STACK
+
+config USB_NRFX
+    default y
+
+endif # USB_DEVICE_STACK
+
+config BT_CTLR
+    default BT
+
+endif # BOARD_POPCORNE
