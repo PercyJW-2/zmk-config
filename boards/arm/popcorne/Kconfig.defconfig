@@ -40,6 +40,9 @@ endchoice
 
 endif # LVGL
 
+config ZMK_KSCAN_MATRIX_POLLING
+    default y
+
 config BT_CTLR
     default BT
 
