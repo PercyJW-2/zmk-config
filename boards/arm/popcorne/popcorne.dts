@@ -101,6 +101,12 @@
             ;
     };
 
+    // Node name must match original "EXT_POWER" label to preserve user settings. HINT: This board does not use this feature and the power mode needs to be switched manually via a keycode.
+    EXT_POWER {
+        compatible = "zmk,ext-power-generic";
+        control-gpios = <&gpio0 5 GPIO_ACTIVE_LOW>;
+    };
+
     vbatt: vbatt {
         compatible = "zmk,battery-voltage-divider";
         io-channels = <&adc 6>;
