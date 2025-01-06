@@ -22,7 +22,7 @@
 
     chosen {
         zephyr,sram = &sram0;
-        zephyr,flash = &flash0;
+        //zephyr,flash = &flash0;
         zephyr,display = &oled;
         zmk,battery = &vbatt;
         zmk,kscan = &kscan0;
@@ -187,7 +187,7 @@ zephyr_udc0: &usbd {
     status = "okay";
 };
 
-&flash0 {
+/*&flash0 {
     /*
      * For more information, see:
      * https://docs.zephyrproject.org/latest/build/dts/api/bindings/mtd/fixed-partitions.html
@@ -200,9 +200,11 @@ zephyr_udc0: &usbd {
         sd_partition: partition@0 {
             reg = <0x00000000 0x00026000>;
         };
+
         code_partition: partition@26000 {
             reg = <0x00026000 0x000c6000>;
         };
+
         /*
          * The flash starting at 0x000ec000 and ending at
          * 0x000f3fff is reserved for use by the application.
@@ -215,8 +217,9 @@ zephyr_udc0: &usbd {
         storage_partition: partition@ec000 {
             reg = <0x000ec000 0x00008000>;
         };
+
         boot_partition: partition@f4000 {
             reg = <0x000f4000 0x0000c000>;
         };
     };
-};
+};*/
