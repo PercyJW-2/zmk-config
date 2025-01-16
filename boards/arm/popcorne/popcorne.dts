@@ -206,8 +206,8 @@
 
         /* WS2812 */
         chain-length = <44>; /* number of LEDs */
-        spi-one-frame = <0x7C>;
-        spi-zero-frame = <0x60>;
+        spi-one-frame = <0xF0>;
+        spi-zero-frame = <0xE0>;
         color-mapping = <LED_COLOR_ID_GREEN
         LED_COLOR_ID_RED
         LED_COLOR_ID_BLUE>;
