@@ -202,7 +202,7 @@
 &i2s0 {
     compatible = "nordic,nrf-i2s";
     pinctrl-0 = <&i2s0_default>;
-    pinctlr-1 = <&i2s1_sleep>;
+    pinctlr-1 = <&i2s0_sleep>;
     pinctlr-names = "default", "sleep";
     status = "okay";
 
