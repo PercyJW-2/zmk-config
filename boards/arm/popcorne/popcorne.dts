@@ -199,7 +199,7 @@
     };
 };
 
-spi3 {
+&spi3 {
     compatible = "nordic,nrf-spim";
 
     pinctrl-0 = <&spi3_default>;
