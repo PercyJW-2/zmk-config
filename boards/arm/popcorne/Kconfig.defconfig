@@ -23,6 +23,13 @@ config SSD1306
 
 endif # ZMK_DISPLAY
 
+if ZMK_RGB_UNDERGLOW
+
+config SPI
+    default n
+
+endif
+
 if LVGL
 
 config LV_Z_VDB_SIZE
