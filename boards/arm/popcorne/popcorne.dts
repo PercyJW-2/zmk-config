@@ -135,7 +135,7 @@
         color-mapping = <LED_COLOR_ID_GREEN
                          LED_COLOR_ID_RED
                          LED_COLOR_ID_BLUE>;
-        gpios = <&gpio1 12 0>;
+        gpios = <&gpio1 12 (GPIO_ACTIVE_LOW)>;
         delay-t1h = <22>;
         delay-t1l = <19>;
         delay-t0h = <11>;
